@@ -43,13 +43,35 @@
                                         <rect key="frame" x="0.0" y="269" width="375" height="64.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LsS-GC-gIe">
+                                        <rect key="frame" x="30" y="137" width="120" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="VRZ-PL-cLf"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="ujZ-vV-b8d"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ry9-zF-UNM">
+                                        <rect key="frame" x="225" y="137" width="120" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="mvg-nW-7qH"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="yC8-yt-JoA"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="B3c-Db-ygd" firstAttribute="top" secondItem="8t7-Ok-wYb" secondAttribute="top" constant="269" id="2eB-tg-fDh"/>
+                                    <constraint firstItem="Ry9-zF-UNM" firstAttribute="centerY" secondItem="8t7-Ok-wYb" secondAttribute="centerY" id="A36-hh-tP7"/>
+                                    <constraint firstItem="LsS-GC-gIe" firstAttribute="centerY" secondItem="8t7-Ok-wYb" secondAttribute="centerY" id="H40-Jm-t9n"/>
                                     <constraint firstAttribute="bottom" secondItem="B3c-Db-ygd" secondAttribute="bottom" id="HuM-Mo-XV5"/>
                                     <constraint firstItem="B3c-Db-ygd" firstAttribute="leading" secondItem="8t7-Ok-wYb" secondAttribute="leading" id="Ihh-Pf-2n0"/>
+                                    <constraint firstItem="Ry9-zF-UNM" firstAttribute="centerX" secondItem="8t7-Ok-wYb" secondAttribute="centerX" constant="97.5" id="i3T-NN-xo3"/>
                                     <constraint firstAttribute="trailing" secondItem="B3c-Db-ygd" secondAttribute="trailing" id="uc6-5a-9pv"/>
+                                    <constraint firstItem="LsS-GC-gIe" firstAttribute="centerX" secondItem="8t7-Ok-wYb" secondAttribute="centerX" constant="-97.5" id="w4Y-Du-QyP"/>
                                 </constraints>
                             </view>
                         </subviews>
