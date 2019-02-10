@@ -39,15 +39,54 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8t7-Ok-wYb" userLabel="2nd Half">
                                 <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3c-Db-ygd">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3c-Db-ygd" userLabel="Score View">
                                         <rect key="frame" x="0.0" y="269" width="375" height="64.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LfN-97-ZDT" userLabel="Progress Bar">
+                                                <rect key="frame" x="0.0" y="50.5" width="24" height="14"/>
+                                                <color key="backgroundColor" red="1" green="0.80575918329999996" blue="0.46004545320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="24" id="L8v-TH-syC"/>
+                                                    <constraint firstAttribute="height" constant="14" id="PG9-5M-OMX"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBj-D3-IxT" userLabel="Progress Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="52" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="OKl-aw-ZWh"/>
+                                                    <constraint firstAttribute="height" constant="21" id="OYH-g7-4C6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmD-08-abU" userLabel="Progress Label">
+                                                <rect key="frame" x="323" y="0.0" width="52" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="5o2-RT-1W6"/>
+                                                    <constraint firstAttribute="height" constant="21" id="G2d-jy-uVc"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="Pza-ag-1fC"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="rbR-Aa-awZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="JmD-08-abU" secondAttribute="trailing" id="54y-v6-zBM"/>
+                                            <constraint firstItem="LfN-97-ZDT" firstAttribute="leading" secondItem="B3c-Db-ygd" secondAttribute="leading" id="7id-pR-aGB"/>
                                             <constraint firstAttribute="height" constant="64.5" id="ES0-mW-NLC"/>
+                                            <constraint firstAttribute="bottom" secondItem="LfN-97-ZDT" secondAttribute="bottom" id="Fyz-7E-N6T"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="YYI-hl-Mk4"/>
+                                            <constraint firstItem="JmD-08-abU" firstAttribute="leading" secondItem="LBj-D3-IxT" secondAttribute="trailing" constant="271" id="ZnG-8a-n27"/>
+                                            <constraint firstItem="LBj-D3-IxT" firstAttribute="leading" secondItem="B3c-Db-ygd" secondAttribute="leading" id="c4Y-0y-xtg"/>
+                                            <constraint firstItem="LBj-D3-IxT" firstAttribute="top" secondItem="B3c-Db-ygd" secondAttribute="top" id="lWD-4c-iW3"/>
+                                            <constraint firstItem="JmD-08-abU" firstAttribute="top" secondItem="B3c-Db-ygd" secondAttribute="top" id="v8E-Ls-Bwb"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LsS-GC-gIe">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LsS-GC-gIe" userLabel="True">
                                         <rect key="frame" x="30" y="137" width="120" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -56,7 +95,7 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ry9-zF-UNM">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ry9-zF-UNM" userLabel="False">
                                         <rect key="frame" x="225" y="137" width="120" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
