@@ -42,6 +42,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3c-Db-ygd">
                                         <rect key="frame" x="0.0" y="269" width="375" height="64.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64.5" id="ES0-mW-NLC"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="YYI-hl-Mk4"/>
+                                        </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LsS-GC-gIe">
                                         <rect key="frame" x="30" y="137" width="120" height="60"/>
@@ -64,13 +68,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="B3c-Db-ygd" firstAttribute="top" secondItem="8t7-Ok-wYb" secondAttribute="top" constant="269" id="2eB-tg-fDh"/>
+                                    <constraint firstItem="B3c-Db-ygd" firstAttribute="centerX" secondItem="8t7-Ok-wYb" secondAttribute="centerX" id="0fl-Mi-ONU"/>
                                     <constraint firstItem="Ry9-zF-UNM" firstAttribute="centerY" secondItem="8t7-Ok-wYb" secondAttribute="centerY" id="A36-hh-tP7"/>
+                                    <constraint firstItem="B3c-Db-ygd" firstAttribute="centerY" secondItem="8t7-Ok-wYb" secondAttribute="centerY" constant="134.5" id="AL2-mB-xe2"/>
                                     <constraint firstItem="LsS-GC-gIe" firstAttribute="centerY" secondItem="8t7-Ok-wYb" secondAttribute="centerY" id="H40-Jm-t9n"/>
-                                    <constraint firstAttribute="bottom" secondItem="B3c-Db-ygd" secondAttribute="bottom" id="HuM-Mo-XV5"/>
-                                    <constraint firstItem="B3c-Db-ygd" firstAttribute="leading" secondItem="8t7-Ok-wYb" secondAttribute="leading" id="Ihh-Pf-2n0"/>
+                                    <constraint firstItem="B3c-Db-ygd" firstAttribute="leading" secondItem="8t7-Ok-wYb" secondAttribute="leading" id="HZd-PR-f2P"/>
+                                    <constraint firstAttribute="trailing" secondItem="B3c-Db-ygd" secondAttribute="trailing" id="Ueo-De-uql"/>
                                     <constraint firstItem="Ry9-zF-UNM" firstAttribute="centerX" secondItem="8t7-Ok-wYb" secondAttribute="centerX" constant="97.5" id="i3T-NN-xo3"/>
-                                    <constraint firstAttribute="trailing" secondItem="B3c-Db-ygd" secondAttribute="trailing" id="uc6-5a-9pv"/>
                                     <constraint firstItem="LsS-GC-gIe" firstAttribute="centerX" secondItem="8t7-Ok-wYb" secondAttribute="centerX" constant="-97.5" id="w4Y-Du-QyP"/>
                                 </constraints>
                             </view>
