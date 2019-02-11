@@ -21,14 +21,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ih-nd-edn" userLabel="1st half">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="330"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtz-Wi-F31">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="vtz-Wi-F31">
                                         <rect key="frame" x="10" y="10" width="355" height="310"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="26"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.80575918329999996" blue="0.46004545320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="vtz-Wi-F31" secondAttribute="bottom" constant="10" id="1Rx-57-5Jj"/>
                                     <constraint firstAttribute="trailing" secondItem="vtz-Wi-F31" secondAttribute="trailing" constant="10" id="4e0-h9-gZa"/>
@@ -40,22 +39,27 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lli-DZ-yrt" userLabel="2nd half">
                                 <rect key="frame" x="0.0" y="330" width="375" height="292"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlE-3m-MaG" userLabel="True">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlE-3m-MaG" userLabel="True">
                                         <rect key="frame" x="25" y="118" width="155.5" height="56"/>
                                         <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="ZKf-lY-Zff"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="ZWR-xg-7YJ"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="True"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nkt-dy-C8m"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qat-WG-Xoa" userLabel="False">
                                         <rect key="frame" x="194.5" y="118" width="155.5" height="56"/>
                                         <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="False"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ITI-Cu-yyr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="qat-WG-Xoa" secondAttribute="trailing" constant="25" id="3IB-fi-JEM"/>
                                     <constraint firstItem="qat-WG-Xoa" firstAttribute="centerY" secondItem="lli-DZ-yrt" secondAttribute="centerY" id="Ssj-Z1-bbb"/>
@@ -98,7 +102,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="n3D-cP-IYk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gz8-d8-Pbm" secondAttribute="trailing" constant="20" id="1TS-GF-vi5"/>
                                     <constraint firstItem="Gz8-d8-Pbm" firstAttribute="leading" secondItem="FuS-NI-Gyz" secondAttribute="leading" id="7aD-oU-fzP"/>
@@ -129,6 +132,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bar" destination="XXL-mw-Bmn" id="jH9-JB-tMG"/>
+                        <outlet property="progressLabel" destination="Gz8-d8-Pbm" id="AmR-ch-wh7"/>
+                        <outlet property="quesLabel" destination="vtz-Wi-F31" id="bUw-CO-U9w"/>
+                        <outlet property="scoreLabel" destination="n3D-cP-IYk" id="Gmp-r5-chA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
