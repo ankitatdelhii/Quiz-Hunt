@@ -41,26 +41,26 @@
                                 <rect key="frame" x="0.0" y="330" width="375" height="292"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlE-3m-MaG" userLabel="True">
-                                        <rect key="frame" x="33" y="113.5" width="130" height="65"/>
+                                        <rect key="frame" x="25" y="118" width="155.5" height="56"/>
                                         <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="65" id="ZKf-lY-Zff"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="ZWR-xg-7YJ"/>
+                                            <constraint firstAttribute="height" constant="56" id="ZKf-lY-Zff"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="ZWR-xg-7YJ"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qat-WG-Xoa" userLabel="False">
-                                        <rect key="frame" x="212" y="113.5" width="130" height="65"/>
+                                        <rect key="frame" x="194.5" y="118" width="155.5" height="56"/>
                                         <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="qat-WG-Xoa" secondAttribute="trailing" constant="33" id="3IB-fi-JEM"/>
+                                    <constraint firstAttribute="trailing" secondItem="qat-WG-Xoa" secondAttribute="trailing" constant="25" id="3IB-fi-JEM"/>
                                     <constraint firstItem="qat-WG-Xoa" firstAttribute="centerY" secondItem="lli-DZ-yrt" secondAttribute="centerY" id="Ssj-Z1-bbb"/>
-                                    <constraint firstItem="qat-WG-Xoa" firstAttribute="leading" secondItem="VlE-3m-MaG" secondAttribute="trailing" constant="49" id="i5t-Bc-uOZ"/>
-                                    <constraint firstItem="VlE-3m-MaG" firstAttribute="leading" secondItem="lli-DZ-yrt" secondAttribute="leading" constant="33" id="njf-MT-ZaY"/>
+                                    <constraint firstItem="qat-WG-Xoa" firstAttribute="leading" secondItem="VlE-3m-MaG" secondAttribute="trailing" constant="14" id="i5t-Bc-uOZ"/>
+                                    <constraint firstItem="VlE-3m-MaG" firstAttribute="leading" secondItem="lli-DZ-yrt" secondAttribute="leading" constant="25" id="njf-MT-ZaY"/>
                                     <constraint firstItem="VlE-3m-MaG" firstAttribute="centerY" secondItem="lli-DZ-yrt" secondAttribute="centerY" id="qu6-qM-K60"/>
                                     <constraint firstItem="qat-WG-Xoa" firstAttribute="height" secondItem="VlE-3m-MaG" secondAttribute="height" id="rPx-z2-KJr"/>
                                     <constraint firstItem="qat-WG-Xoa" firstAttribute="width" secondItem="VlE-3m-MaG" secondAttribute="width" id="td1-gm-SAe"/>
@@ -79,7 +79,6 @@
                             <constraint firstItem="FuS-NI-Gyz" firstAttribute="top" secondItem="lli-DZ-yrt" secondAttribute="bottom" id="0co-ul-VP1"/>
                             <constraint firstAttribute="trailing" secondItem="6Ih-nd-edn" secondAttribute="trailing" id="3fK-aI-D1w"/>
                             <constraint firstItem="lli-DZ-yrt" firstAttribute="top" secondItem="6Ih-nd-edn" secondAttribute="bottom" id="4Ig-1R-yHE"/>
-                            <constraint firstItem="lli-DZ-yrt" firstAttribute="top" secondItem="6Ih-nd-edn" secondAttribute="bottom" id="7k7-eR-wlS"/>
                             <constraint firstAttribute="trailing" secondItem="FuS-NI-Gyz" secondAttribute="trailing" id="DfP-fO-hS0"/>
                             <constraint firstItem="lli-DZ-yrt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="G7O-G4-B3a"/>
                             <constraint firstItem="FuS-NI-Gyz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IlC-6U-YZo"/>
@@ -87,7 +86,6 @@
                             <constraint firstAttribute="trailing" secondItem="lli-DZ-yrt" secondAttribute="trailing" id="VCS-ow-dNL"/>
                             <constraint firstItem="6Ih-nd-edn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZuR-nM-dAS"/>
                             <constraint firstAttribute="bottom" secondItem="FuS-NI-Gyz" secondAttribute="bottom" id="j6n-wy-Y8b"/>
-                            <constraint firstItem="FuS-NI-Gyz" firstAttribute="top" secondItem="lli-DZ-yrt" secondAttribute="bottom" id="wql-8W-qpv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
