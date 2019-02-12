@@ -82,20 +82,20 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 150" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="n3D-cP-IYk">
-                                        <rect key="frame" x="293.5" y="0.0" width="81.5" height="25"/>
+                                        <rect key="frame" x="290" y="0.0" width="81.5" height="25"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="1RP-2A-ndV"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="81.5" id="xbj-a8-Wsq"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="81.5" id="TwB-0r-UkR"/>
+                                            <constraint firstAttribute="height" constant="25" id="oqA-Su-NKw"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x/13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gz8-d8-Pbm">
-                                        <rect key="frame" x="0.0" y="0.0" width="32" height="20.5"/>
+                                        <rect key="frame" x="10" y="0.0" width="32" height="20.5"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20.5" id="GfO-kk-EMM"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="tsF-Tv-zX2"/>
+                                            <constraint firstAttribute="height" constant="20.5" id="YJx-aS-moC"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="cgU-tw-zQR"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -104,13 +104,13 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="XXL-mw-Bmn" secondAttribute="bottom" id="12I-fP-t60"/>
-                                    <constraint firstItem="Gz8-d8-Pbm" firstAttribute="top" secondItem="FuS-NI-Gyz" secondAttribute="top" id="LQo-MD-Gxn"/>
+                                    <constraint firstAttribute="trailing" secondItem="n3D-cP-IYk" secondAttribute="trailing" constant="3.5" id="5Hj-6a-0em"/>
+                                    <constraint firstItem="Gz8-d8-Pbm" firstAttribute="leading" secondItem="FuS-NI-Gyz" secondAttribute="leading" constant="10" id="DzM-pn-gEX"/>
                                     <constraint firstAttribute="height" constant="45" id="O1G-tq-HP7"/>
-                                    <constraint firstItem="Gz8-d8-Pbm" firstAttribute="leading" secondItem="FuS-NI-Gyz" secondAttribute="leading" id="Ov5-ZI-xwF"/>
-                                    <constraint firstItem="n3D-cP-IYk" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Gz8-d8-Pbm" secondAttribute="trailing" constant="261.5" id="OvB-F8-HDw"/>
+                                    <constraint firstItem="Gz8-d8-Pbm" firstAttribute="top" secondItem="FuS-NI-Gyz" secondAttribute="top" id="Tgn-c2-1ys"/>
                                     <constraint firstItem="XXL-mw-Bmn" firstAttribute="leading" secondItem="FuS-NI-Gyz" secondAttribute="leading" id="ViX-k6-lk4"/>
-                                    <constraint firstAttribute="trailing" secondItem="n3D-cP-IYk" secondAttribute="trailing" id="ZMj-na-gb8"/>
-                                    <constraint firstItem="n3D-cP-IYk" firstAttribute="top" secondItem="FuS-NI-Gyz" secondAttribute="top" id="eMI-14-Cse"/>
+                                    <constraint firstItem="n3D-cP-IYk" firstAttribute="top" secondItem="FuS-NI-Gyz" secondAttribute="top" id="XM7-5I-kSR"/>
+                                    <constraint firstItem="n3D-cP-IYk" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Gz8-d8-Pbm" secondAttribute="trailing" constant="248" id="aFm-v1-QCe"/>
                                 </constraints>
                             </view>
                         </subviews>

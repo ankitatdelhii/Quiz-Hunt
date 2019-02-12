@@ -13,8 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var quesLabel: UILabel! //Name of the question
     @IBOutlet weak var scoreLabel: UILabel! //score
     @IBOutlet weak var progressLabel: UILabel! // x/15
-    
     @IBOutlet var progressWidth: NSLayoutConstraint!
+    
+    
     var questions = Ques()
     var quesIndex = 0
     var selectedAns : Bool = false
@@ -23,35 +24,24 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         updateUI()
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
-        print(sender.tag)
         selectedAns = sender.tag == 1 ? true : false
         checkAns(with: selectedAns)
     }
     
     func checkAns(with: Bool){
-        if selectedAns == questions.allQues[quesIndex].ans{
-            score = score + 1
-            print("Correct")
-        }
-        else{
-            print("Wrong")
-        }
+        selectedAns == questions.allQues[quesIndex].ans ? score = score + 1 : nil
         quesIndex = quesIndex + 1
         updateUI()
     }
     
     func updateUI(){
-        print(quesIndex)
+        //Updating Progress Bar
         progressWidth.constant = view.frame.size.width/15 * CGFloat(quesIndex + 1)
-        if quesIndex == 15{
-            restart()
-            print("Evking Ex")
-        }
+        quesIndex == 15 ? restart() : nil
         quesLabel.text = questions.allQues[quesIndex].title
         progressLabel.text = "\(quesIndex+1)/15"
         scoreLabel.text = "Score: \(score*10)"
@@ -59,9 +49,7 @@ class ViewController: UIViewController {
     
     
     func restart(){
-        quesIndex = 0
-        score = 0
-        updateUI()
+        quesIndex = 0; score = 0; updateUI()
         let alert = UIAlertController(title: "Do you want to Restart?", message: "Replay Again!", preferredStyle: .alert)
         
         let action = UIAlertAction(title: "Restart!", style: .default) { (action) in
