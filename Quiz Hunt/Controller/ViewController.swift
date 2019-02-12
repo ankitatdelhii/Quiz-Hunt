@@ -33,7 +33,13 @@ class ViewController: UIViewController {
     }
     
     func checkAns(with: Bool){
-        selectedAns == questions.allQues[quesIndex].ans ? score = score + 1 : nil
+        if selectedAns == questions.allQues[quesIndex].ans{
+            score = score + 1
+            ProgressHUD.showSuccess()
+        }
+        else{
+            ProgressHUD.showError()
+        }
         quesIndex = quesIndex + 1
         updateUI()
     }
