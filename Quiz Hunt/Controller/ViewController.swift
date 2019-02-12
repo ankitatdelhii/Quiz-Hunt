@@ -11,10 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var quesLabel: UILabel! //Name of the question
-    @IBOutlet weak var bar: UIView!
     @IBOutlet weak var scoreLabel: UILabel! //score
     @IBOutlet weak var progressLabel: UILabel! // x/15
     
+    @IBOutlet var progressWidth: NSLayoutConstraint!
     var questions = Ques()
     var quesIndex = 0
     var selectedAns : Bool = false
@@ -47,6 +47,7 @@ class ViewController: UIViewController {
     
     func updateUI(){
         print(quesIndex)
+        progressWidth.constant = view.frame.size.width/15 * CGFloat(quesIndex + 1)
         if quesIndex == 15{
             restart()
             print("Evking Ex")
@@ -55,6 +56,7 @@ class ViewController: UIViewController {
         progressLabel.text = "\(quesIndex+1)/15"
         scoreLabel.text = "Score: \(score*10)"
     }
+    
     
     func restart(){
         quesIndex = 0
