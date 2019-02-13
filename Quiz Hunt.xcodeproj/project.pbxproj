@@ -20,6 +20,7 @@
 		9DBAA39B22143D4D00596344 /* ss1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DBAA39922143D4D00596344 /* ss1.jpg */; };
 		9DBAA39C22143D4D00596344 /* ss2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DBAA39A22143D4D00596344 /* ss2.jpg */; };
 		9DBAA39E22143E4A00596344 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9DBAA39D22143E4A00596344 /* .gitignore */; };
+		9DBAA3A222145DB900596344 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 9DBAA3A122145DB900596344 /* .gitattributes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		9DBAA39922143D4D00596344 /* ss1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ss1.jpg; sourceTree = "<group>"; };
 		9DBAA39A22143D4D00596344 /* ss2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ss2.jpg; sourceTree = "<group>"; };
 		9DBAA39D22143E4A00596344 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9DBAA3A122145DB900596344 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				9DBAA39822143CB900596344 /* Screenshots */,
 				9D128D9422137721003472EB /* Supporting Files */,
 				9DBAA39D22143E4A00596344 /* .gitignore */,
+				9DBAA3A122145DB900596344 /* .gitattributes */,
 			);
 			path = "Quiz Hunt";
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				9DB288CE220E01FE00F1966C /* Assets.xcassets in Resources */,
 				9DBAA39B22143D4D00596344 /* ss1.jpg in Resources */,
 				9DB288CC220E01F800F1966C /* Main.storyboard in Resources */,
+				9DBAA3A222145DB900596344 /* .gitattributes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
