@@ -16,6 +16,10 @@
 		9DB288CC220E01F800F1966C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB288CA220E01F800F1966C /* Main.storyboard */; };
 		9DB288CE220E01FE00F1966C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB288CD220E01FE00F1966C /* Assets.xcassets */; };
 		9DB288D1220E01FE00F1966C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB288CF220E01FE00F1966C /* LaunchScreen.storyboard */; };
+		9DBAA3972214388E00596344 /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBAA3962214388E00596344 /* customButton.swift */; };
+		9DBAA39B22143D4D00596344 /* ss1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DBAA39922143D4D00596344 /* ss1.jpg */; };
+		9DBAA39C22143D4D00596344 /* ss2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DBAA39A22143D4D00596344 /* ss2.jpg */; };
+		9DBAA39E22143E4A00596344 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9DBAA39D22143E4A00596344 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		9DB288CD220E01FE00F1966C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DB288D0220E01FE00F1966C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DB288D2220E01FE00F1966C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DBAA3962214388E00596344 /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
+		9DBAA39922143D4D00596344 /* ss1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ss1.jpg; sourceTree = "<group>"; };
+		9DBAA39A22143D4D00596344 /* ss2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ss2.jpg; sourceTree = "<group>"; };
+		9DBAA39D22143E4A00596344 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				9DB288CA220E01F800F1966C /* Main.storyboard */,
+				9DBAA3962214388E00596344 /* customButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,9 +116,20 @@
 				9DB288CD220E01FE00F1966C /* Assets.xcassets */,
 				9DB288CF220E01FE00F1966C /* LaunchScreen.storyboard */,
 				9DB288D2220E01FE00F1966C /* Info.plist */,
+				9DBAA39822143CB900596344 /* Screenshots */,
 				9D128D9422137721003472EB /* Supporting Files */,
+				9DBAA39D22143E4A00596344 /* .gitignore */,
 			);
 			path = "Quiz Hunt";
+			sourceTree = "<group>";
+		};
+		9DBAA39822143CB900596344 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				9DBAA39922143D4D00596344 /* ss1.jpg */,
+				9DBAA39A22143D4D00596344 /* ss2.jpg */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,9 +191,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DBAA39C22143D4D00596344 /* ss2.jpg in Resources */,
+				9DBAA39E22143E4A00596344 /* .gitignore in Resources */,
 				9D128DA422137831003472EB /* ProgressHUD.bundle in Resources */,
 				9DB288D1220E01FE00F1966C /* LaunchScreen.storyboard in Resources */,
 				9DB288CE220E01FE00F1966C /* Assets.xcassets in Resources */,
+				9DBAA39B22143D4D00596344 /* ss1.jpg in Resources */,
 				9DB288CC220E01F800F1966C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +210,7 @@
 			files = (
 				9DB288C9220E01F800F1966C /* ViewController.swift in Sources */,
 				9D0997CD2212092300F7BBEF /* QuesBank.swift in Sources */,
+				9DBAA3972214388E00596344 /* customButton.swift in Sources */,
 				9D128DA322137831003472EB /* ProgressHUD.m in Sources */,
 				9DB288C7220E01F800F1966C /* AppDelegate.swift in Sources */,
 				9D0997CF2212098600F7BBEF /* Ques.swift in Sources */,
